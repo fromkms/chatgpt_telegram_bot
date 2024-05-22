@@ -1,4 +1,4 @@
-available_text_models: ["gpt-3.5-turbo", "gpt-3.5-turbo-16k", "gpt-4-1106-preview", "gpt-4-vision-preview", "gpt-4", "text-davinci-003"]
+available_text_models: ["gpt-3.5-turbo", "gpt-3.5-turbo-16k", "gpt-4-1106-preview", "gpt-4-vision-preview", "gpt-4", "gpt-4o"]
 
 info:
   gpt-3.5-turbo:
@@ -66,18 +66,18 @@ info:
       fast: 4
       cheap: 3
 
-  text-davinci-003:
-    type: completion
-    name: GPT-3.5
-    description: GPT-3.5 is a legacy model. Actually there is <b>no reason to use it</b>, because it is more expensive and slower than ChatGPT, but just about as smart.
+  gpt-4o:
+    type: chat_completion
+    name: GPT-4o
+    description: GPT-4 is a large multimodal model (accepting text or image inputs and outputting text) that can solve difficult problems with greater accuracy than any of our previous models, thanks to its broader general knowledge and advanced reasoning capabilities. GPT-4 is available in the OpenAI API to paying customers. Like gpt-3.5-turbo, GPT-4 is optimized for chat but works well for traditional completions tasks using the Chat Completions API. Learn how to use GPT-4 in our text generation guide.
 
-    price_per_1000_input_tokens: 0.02
-    price_per_1000_output_tokens: 0.02
+    price_per_1000_input_tokens: 0.005
+    price_per_1000_output_tokens: 0.015
 
     scores:
-      Smart: 3
-      Fast: 2
-      Cheap: 3
+      Smart: 5
+      Fast: 5
+      Cheap: 5
 
   dalle-2:
      type: image
