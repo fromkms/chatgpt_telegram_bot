@@ -11,7 +11,7 @@ then
 fi
 
 # Переход в директорию с клонированным репозиторием
-cd chatgpt_tg_bot
+cd chatgpt_telegram_bot
 
 # Переименование файлов конфигурации
 mv config/config.example.yml config/config.yml
